@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ruhi Rumman Rinthi — Biodata</title>
+<meta name="description" content="Personal biodata of Ruhi Rumman Rinthi, Mymensingh, Bangladesh." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="controls no-print">
+  <button id="themeBtn" class="ctrl" type="button" aria-label="Toggle dark mode">
+    <span data-icon>&#9790;</span><span data-label>Dark</span>
+  </button>
+  <button id="printBtn" class="ctrl" type="button">
+    <span>&#128424;</span><span>Print / PDF</span>
+  </button>
+</div>
+
+<main class="sheet" id="sheet">
+
+  <header class="head reveal">
+    <div class="ornament" aria-hidden="true">
+      <span class="line"></span><span class="dot">&#10022;</span><span class="line"></span>
+    </div>
+    <p class="eyebrow">Biodata</p>
+    <h1 class="name">Ruhi Rumman Rinthi</h1>
+    <p class="tagline">Honours in English &middot; Mymensingh, Bangladesh</p>
+    <div class="ornament" aria-hidden="true">
+      <span class="line"></span><span class="dot">&#10022;</span><span class="line"></span>
+    </div>
+  </header>
+
+  <section class="portrait-wrap reveal">
+    <figure class="portrait">
+      <img src="images/r1.jpeg" alt="Portrait of Ruhi Rumman Rinthi" id="mainPhoto" />
+    </figure>
+    <div class="thumbs no-print" id="thumbs">
+      <button class="thumb is-active" type="button" data-src="images/r1.jpeg" aria-label="Photo 1">
+        <img src="images/r1.jpeg" alt="" />
+      </button>
+      <button class="thumb" type="button" data-src="images/r2.jpeg" aria-label="Photo 2">
+        <img src="images/r2.jpeg" alt="" />
+      </button>
+    </div>
+  </section>
+
+  <section class="block reveal">
+    <h2 class="block-title"><span>Personal</span></h2>
+    <dl class="rows">
+      <div class="row"><dt>Full Name</dt><dd>Ruhi Rumman Rinthi</dd></div>
+      <div class="row"><dt>Date of Birth</dt><dd>9 November 2004 <span class="age" id="age"></span></dd></div>
+      <div class="row"><dt>Permanent Address</dt><dd>Kakchor, Nandail, Mymensingh</dd></div>
+    </dl>
+  </section>
+
+  <section class="block reveal">
+    <h2 class="block-title"><span>Education</span></h2>
+
+    <ol class="timeline">
+      <li class="tl-item">
+        <span class="tl-year">Present</span>
+        <div class="tl-body">
+          <h3>Honours in English &mdash; 2nd Year</h3>
+          <p>Govt. Muminunnesa College, Mymensingh</p>
+        </div>
+      </li>
+      <li class="tl-item">
+        <span class="tl-year">2024</span>
+        <div class="tl-body">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p>Syed Nazrul Islam College, Mymensingh</p>
+        </div>
+      </li>
+      <li class="tl-item">
+        <span class="tl-year">2021</span>
+        <div class="tl-body">
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p>Premier Ideal High School, Mymensingh</p>
+          <p class="badge">GPA 5.00</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block reveal">
+    <h2 class="block-title"><span>Family</span></h2>
+    <div class="cards">
+      <article class="card">
+        <p class="card-role">Father</p>
+        <h3 class="card-name">A. K. Ramiz Uddin Ahammed</h3>
+        <p class="card-meta">Teacher (Mathematics)</p>
+        <p class="card-meta muted">Nandail Pilot Girls' High School</p>
+      </article>
+      <article class="card">
+        <p class="card-role">Mother</p>
+        <h3 class="card-name">Ferdoushi Parvin</h3>
+        <p class="card-meta">Head Teacher</p>
+        <p class="card-meta muted">Baliapara Govt. Primary School</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="foot reveal">
+    <div class="ornament" aria-hidden="true">
+      <span class="line"></span><span class="dot">&#10022;</span><span class="line"></span>
+    </div>
+    <p>Kakchor, Nandail, Mymensingh, Bangladesh</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

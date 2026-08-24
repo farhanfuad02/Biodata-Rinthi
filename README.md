@@ -9,7 +9,7 @@ Static one-page biodata. Plain HTML/CSS/JS, no build step, no dependencies.
 | `index.html` | Page content |
 | `style.css` | Styling, light/dark tokens, print stylesheet |
 | `script.js` | Theme toggle, photo switcher, auto age, scroll reveal, print |
-| `images/` | `r1.jpeg`, `r2.jpeg` |
+| `images/` | `1.jpeg` … `4.jpeg` (1 is the main portrait) |
 | `.nojekyll` | Tells GitHub Pages to serve files as-is |
 
 ## Run locally
@@ -40,6 +40,7 @@ Live at `https://<username>.github.io/<repo>/` after ~1 minute.
 ## Notes
 
 - Age updates itself from the date of birth in `script.js`.
+- To swap photos, replace the files in `images/` keeping the same names — no code change needed.
 - Theme choice is remembered in `localStorage`.
 - **Print / PDF** button prints A4 clean — controls and thumbnails are hidden.
 - Repo is public if using free GitHub Pages, so the personal details on this page are public too. Use a private repo with GitHub Pages on a paid plan, or Netlify/Vercel with a hard-to-guess URL, if that matters.

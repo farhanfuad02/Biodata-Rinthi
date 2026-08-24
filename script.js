@@ -73,6 +73,21 @@
     });
   });
 
+  /* ---------- email link ---------- */
+  /* Opens Gmail's web compose in a new tab. If the popup is blocked,
+     fall back to the device's default mail app via mailto:. */
+  var emailLink = document.getElementById("emailLink");
+
+  emailLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    var win = window.open(emailLink.href, "_blank");
+    if (win) {
+      win.opener = null; // sever the reference instead of passing "noopener",
+      return; // which makes window.open return null even on success
+    }
+    window.location.href = emailLink.getAttribute("data-mailto");
+  });
+
   /* ---------- reveal on scroll ---------- */
   var items = document.querySelectorAll(".reveal");
 
